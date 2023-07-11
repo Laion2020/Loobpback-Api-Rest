@@ -4,13 +4,7 @@ import {juggler} from '@loopback/repository';
 const config = {
   name: 'DatasourceMongodb',
   connector: 'mongodb',
-  url: 'mongodb+srv://rochaleon:ProyectoHabilitacion2023@cluster0.qqud2pj.mongodb.net/?retryWrites=true&w=majority',
-  host: '',
-  port: 0,
-  user: '',
-  password: '',
-  database: 'proyecto',
-  useNewUrlParser: true
+  url: 'mongodb+srv://rochaleon:ProyectoHabilitacion2023@cluster0.qqud2pj.mongodb.net/test'
 };
 
 // Observe application's life cycle to disconnect the datasource when
