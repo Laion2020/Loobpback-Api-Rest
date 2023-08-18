@@ -21,6 +21,12 @@ export class Negocio extends Entity {
   nombre: string;
 
   @property({
+    type: 'string',
+    required: true,
+  })
+  descripcion: string;
+
+  @property({
     type: 'object',
     required: true,
   })
