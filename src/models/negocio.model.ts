@@ -1,9 +1,9 @@
-import {Entity, model, property, hasMany, belongsTo, hasOne} from '@loopback/repository';
-import {Publicidad} from './publicidad.model';
-import {Domicilio} from './domicilio.model';
+import {Entity, belongsTo, hasMany, hasOne, model, property} from '@loopback/repository';
 import {Cliente} from './cliente.model';
+import {Domicilio} from './domicilio.model';
 import {LineaDeFactura} from './linea-de-factura.model';
 import {LineaDeVenta} from './linea-de-venta.model';
+import {Publicidad} from './publicidad.model';
 
 @model({settings: {strict: false}})
 export class Negocio extends Entity {
@@ -25,6 +25,35 @@ export class Negocio extends Entity {
     required: true,
   })
   descripcion: string;
+
+  @property({
+    type: 'string',
+    required: false,
+    itemType: 'string',
+  })
+  imagen1: string;
+
+  @property({
+    type: 'string',
+    required: false,
+    itemType: 'string',
+  })
+  imagen2: string;
+
+  @property({
+    type: 'string',
+    required: false,
+    itemType: 'string',
+  })
+  imagen3: string;
+
+  @property({
+    type: 'string',
+    required: false,
+    itemType: 'string',
+  })
+  imagen4: string;
+
 
   @property({
     type: 'object',
