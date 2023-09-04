@@ -1,4 +1,4 @@
-import {Entity, model, property, hasOne} from '@loopback/repository';
+import {Entity, hasOne, model, property} from '@loopback/repository';
 import {Cliente} from './cliente.model';
 
 @model({settings: {strict: false}})
@@ -20,7 +20,14 @@ export class Usuario extends Entity {
     type: 'string',
     required: true,
   })
-  'e-mail': string;
+  email: string;
+
+  @property({
+    type: 'boolean',
+    required: false,
+    default: false,
+  })
+  admin: boolean;
 
   @property({
     type: 'string',

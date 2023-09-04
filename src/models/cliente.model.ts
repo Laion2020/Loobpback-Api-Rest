@@ -1,9 +1,9 @@
-import {Entity, model, property, hasOne, hasMany} from '@loopback/repository';
-import {Usuario} from './usuario.model';
+import {Entity, hasMany, hasOne, model, property} from '@loopback/repository';
 import {Domicilio} from './domicilio.model';
-import {Negocio} from './negocio.model';
-import {Venta} from './venta.model';
 import {Evento} from './evento.model';
+import {Negocio} from './negocio.model';
+import {Usuario} from './usuario.model';
+import {Venta} from './venta.model';
 
 @model({settings: {strict: false}})
 export class Cliente extends Entity {
