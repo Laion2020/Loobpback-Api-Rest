@@ -17,7 +17,7 @@ export class Evento extends Entity {
 
   @property({
     type: 'string',
-    required: true,
+    required: false,
   })
   id_Usuario: string;
 

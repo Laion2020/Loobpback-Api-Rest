@@ -28,7 +28,7 @@ export class Negocio extends Entity {
 
   @property({
     type: 'string',
-    required: true,
+    required: false,
   })
   id_Usuario: string;
 
