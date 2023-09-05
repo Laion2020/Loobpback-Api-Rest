@@ -28,23 +28,25 @@ export class Evento extends Entity {
   descripcion: string;
 
   @property({
-    type: 'date',
+    type: 'string',
     required: true,
   })
   fecha_Inicio: string;
 
   @property({
-    type: 'date',
+    type: 'string',
+    required: false,
   })
   fecha_Fin?: string;
 
   @property({
-    type: 'date',
+    type: 'string',
+    required: false,
   })
   hora_Fin?: string;
 
   @property({
-    type: 'date',
+    type: 'string',
     required: true,
   })
   hora_Inicio: string;
