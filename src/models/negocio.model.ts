@@ -28,6 +28,12 @@ export class Negocio extends Entity {
 
   @property({
     type: 'string',
+    required: true,
+  })
+  id_Usuario: string;
+
+  @property({
+    type: 'string',
     required: false,
     itemType: 'string',
   })
