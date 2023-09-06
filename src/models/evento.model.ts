@@ -28,6 +28,13 @@ export class Evento extends Entity {
   descripcion: string;
 
   @property({
+    type: 'boolean',
+    required: false,
+    default: false,
+  })
+  habilitado: boolean;
+
+  @property({
     type: 'string',
     required: true,
   })

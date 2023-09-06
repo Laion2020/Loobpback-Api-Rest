@@ -27,6 +27,20 @@ export class Negocio extends Entity {
   descripcion: string;
 
   @property({
+    type: 'boolean',
+    required: false,
+    default: false,
+  })
+  habilitado: boolean;
+
+  @property({
+    type: 'boolean',
+    required: false,
+    default: false,
+  })
+  premium: boolean;
+
+  @property({
     type: 'string',
     required: false,
   })
